@@ -1,5 +1,5 @@
 package user_chat
-
+//import com.google.firebase*
 import com.google.firebase.firestore.Exclude
 
 class UserChat{
