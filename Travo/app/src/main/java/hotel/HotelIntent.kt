@@ -343,6 +343,8 @@ class HotelIntent : AppCompatActivity() {
     private fun displayTrack(s: String, d: String) {
         try {
 
+            
+            //val gmmIntentUri = Uri.parse("https://www.google.co.in/maps/dir/$s/$d")-->get directions
             val gmmIntentUri = Uri.parse("https://www.google.co.in/maps/dir/$s/$d")
             val mapIntent = Intent(Intent.ACTION_VIEW, gmmIntentUri)
             mapIntent.setPackage("com.google.android.apps.maps")
