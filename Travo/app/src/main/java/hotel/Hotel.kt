@@ -4,6 +4,7 @@ import com.google.firebase.firestore.Exclude
 
 class Hotel {
 
+    //variables for hotels
     var name:String?=null
     var star:String?=null
     var price:String?=null
