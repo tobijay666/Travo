@@ -26,7 +26,8 @@ class HotelAdapter(private val context: FragmentActivity?,private val hotelList:
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): HotelViewHolder {
 
-        val itemView= LayoutInflater.from(parent.context).inflate(R.layout.hotels_list_items,parent,false)
+        val itemView= LayoutInflater.from(parent.context).inflate
+                (R.layout.hotels_list_items,parent,false)
         return HotelViewHolder(itemView, mListener)
     }
 
@@ -49,7 +50,8 @@ class HotelAdapter(private val context: FragmentActivity?,private val hotelList:
       return hotelList.size
     }
 
-    class HotelViewHolder(itemView:View,listener: onItemClickListener):RecyclerView.ViewHolder(itemView){
+    class HotelViewHolder(itemView:View,listener: onItemClickListener):
+                        RecyclerView.ViewHolder(itemView){
 
             val hotelName: TextView =itemView.findViewById(R.id.txtHotelName)
             val hotelStar: TextView =itemView.findViewById(R.id.txtStar)
