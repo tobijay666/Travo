@@ -28,10 +28,10 @@ class ForgottenPwd : AppCompatActivity() {
         restPwd()
 
     }
-
+//reset Password method
     private fun restPwd() {
         val email=edtEmail.text.toString().trim()
-
+//check email
         if (email.isEmpty()){
             edtEmail.error="Required"
             edtEmail.requestFocus()
@@ -51,6 +51,7 @@ class ForgottenPwd : AppCompatActivity() {
                 startActivity(Intent(this,Login::class.java))
             }
             else{
+                //error message
                 Toast.makeText(this,"Something went wrong",Toast.LENGTH_LONG).show()
             }
         }
