@@ -127,7 +127,7 @@ class ChatFrag : Fragment() {
                 override fun onItemClick(position: Int) {
                     //Toast.makeText(this@HotelAct,"$position", Toast.LENGTH_SHORT).show()
                     val intent= Intent(activity, Chat::class.java)
-
+                    // sending data to the next frag
                     intent.putExtra("name",userList[position].name)
                     intent.putExtra("uid",userList[position].id )
                     intent.putExtra("image",userList[position].image )
